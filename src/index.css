@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Archivo', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-marker: 'Permanent Marker', cursive;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-body);
+    background-color: #0d1015;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-marker {
+  font-family: var(--font-marker);
+}
+
+/* Ruled index card background for Sharpie storyboard cards */
+.storyboard-card-paper {
+  background-color: #faf7f0;
+  background-image:
+    linear-gradient(to bottom, transparent 23px, rgba(59, 130, 246, 0.14) 24px);
+  background-size: 100% 24px;
+}
